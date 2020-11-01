@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleaf页面</title>
+</head>
+<body>
+    <h3 style="text-align: center;">thymeleaf页面</h3>
+    <h4 th:text="${username}"></h4><h4 th:text="${age}"></h4><h4 th:text="${sex}"></h4>
+    <h4 th:text="${session.userCount + '个用户在线'}"></h4>
+    <h4 th:text="${application.context}"></h4>
+</body>
+</html>

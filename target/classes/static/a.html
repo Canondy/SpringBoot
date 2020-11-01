@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="txtName" name="myName" placeholder="姓名" type="text" onblur="loseName()" >
+</body>
+<script>
+    function loseName() {
+        var name = document.getElementById("txtName").value;
+        //alert(name);
+        reg=/^([\u4e00-\u9fa5]){2,7}$/;
+        if(!reg.test(name)){
+            alert("姓名不能为空")
+        }
+    }
+</script>
+</html>
